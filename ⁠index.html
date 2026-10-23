@@ -3,10 +3,168 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Barbershop</title>
+    <title>BARBER CLUB</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: Arial, sans-serif;
+            background: #111;
+            color: white;
+        }
+        header {
+            background: #1b1b1b;
+            padding: 20px 8%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        header h1 {
+            color: #d4a853;
+            font-size: 26px;
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin-left: 20px;
+        }
+        .hero {
+            min-height: 500px;
+            padding: 100px 8%;
+            text-align: center;
+            background:
+                linear-gradient(#0009, #0009),
+                url("https://images.unsplash.com/photo-1503951914875-452162b0f3f1?auto=format&fit=crop&w=1600&q=80")
+                center/cover;
+        }
+        .hero h2 {
+            font-size: 48px;
+            margin-bottom: 20px;
+        }
+        .hero p {
+            font-size: 20px;
+            margin-bottom: 30px;
+        }
+        .btn {
+            display: inline-block;
+            background: #d4a853;
+            color: #111;
+            padding: 15px 30px;
+            text-decoration: none;
+            font-weight: bold;
+            border-radius: 5px;
+        }
+        section {
+            padding: 60px 8%;
+            text-align: center;
+        }
+        section h2 {
+            color: #d4a853;
+            margin-bottom: 30px;
+            font-size: 32px;
+        }
+        .services {
+            display: flex;
+            justify-content: center;
+            gap: 25px;
+            flex-wrap: wrap;
+        }
+        .card {
+            background: #222;
+            padding: 30px;
+            width: 250px;
+            border-radius: 10px;
+        }
+        .card h3 {
+            margin-bottom: 15px;
+        }
+        .price {
+            color: #d4a853;
+            font-size: 24px;
+            margin-top: 15px;
+        }
+        .about {
+            background: #1b1b1b;
+        }
+        .contact p {
+            margin: 12px 0;
+            font-size: 18px;
+        }
+        footer {
+            text-align: center;
+            padding: 20px;
+            background: #080808;
+            color: #aaa;
+        }
+        @media (max-width: 600px) {
+            header {
+                flex-direction: column;
+                gap: 15px;
+            }
+            nav a {
+                margin: 0 6px;
+            }
+            .hero h2 {
+                font-size: 34px;
+            }
+        }
+    </style>
 </head>
 <body>
-    <h1>Добро пожаловать в Barbershop!</h1>
-    <p>Наш сайт находится в разработке.</p>
+    <header>
+        <h1>BARBER CLUB</h1>
+        <nav>
+            <a href="#home">Главная</a>
+            <a href="#services">Услуги</a>
+            <a href="#about">О нас</a>
+            <a href="#contact">Контакты</a>
+        </nav>
+    </header>
+    <section class="hero" id="home">
+        <h2>ТВОЙ СТИЛЬ — НАША РАБОТА</h2>
+        <p>Мужские стрижки. Борода. Индивидуальный стиль.</p>
+        <a class="btn" href="https://wa.me/77000000000">Записаться</a>
+    </section>
+    <section id="services">
+        <h2>НАШИ УСЛУГИ</h2>
+        <div class="services">
+            <div class="card">
+                <h3>Мужская стрижка</h3>
+                <p>Стильная стрижка с учётом твоих пожеланий.</p>
+                <div class="price">4 000 ₸</div>
+            </div>
+            <div class="card">
+                <h3>Стрижка бороды</h3>
+                <p>Аккуратная форма и профессиональный уход.</p>
+                <div class="price">2 000 ₸</div>
+            </div>
+            <div class="card">
+                <h3>Комплекс</h3>
+                <p>Стрижка волос и оформление бороды.</p>
+                <div class="price">5 500 ₸</div>
+            </div>
+        </div>
+    </section>
+    <section class="about" id="about">
+        <h2>О НАС</h2>
+        <p>
+            BARBER CLUB — место, где создают твой стиль.
+            Профессиональные мастера, качественный сервис
+            и комфортная атмосфера.
+        </p>
+    </section>
+    <section class="contact" id="contact">
+        <h2>КОНТАКТЫ</h2>
+        <p>📍 Город: Актобе</p>
+        <p>📞 Телефон: +7 700 000 00 00</p>
+        <p>🕒 Время работы: 10:00–22:00</p>
+        <a class="btn" href="https://wa.me/77000000000">Написать в WhatsApp</a>
+    </section>
+    <footer>
+        <p>© 2026 BARBER CLUB. Все права защищены.</p>
+    </footer>
 </body>
 </html>
